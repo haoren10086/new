@@ -1,0 +1,19 @@
+  /*
+         http 模块   cmd  Amd区别？
+        require  和  import的区别？
+
+        request 请求   response 响应
+        wirteHead  写入响应头   文本类型  text/html   格式  utf-8
+
+        fs=file system  文件系统
+    */
+    // 引入http模块
+    var http = require('http')
+    // 创建服务器
+    http.createServer((req,res)=>{
+        // req  = request  请求   res = response  响应
+        console.log('hello node');
+        // 结束响应
+        res.end("end")
+    }).listen(3000)
+    // listen  监听端口
